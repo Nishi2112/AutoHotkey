@@ -677,6 +677,16 @@ global F13_threshold := 300 ; ☆1 タップ判別時間 (ミリ秒単位)
         ; Send,^+{Tab}
         Return 
 
+    PgUp::
+        IME_SET(0)
+        send,{d}
+        Return
+
+    PgUp::
+        IME_SET(0)
+        send,{c}
+        Return
+
     #IfWinActive
 
 ; One Commander専用
