@@ -678,12 +678,10 @@ global F13_threshold := 300 ; ☆1 タップ判別時間 (ミリ秒単位)
         Return 
 
     PgUp::
-        IME_SET(0)
         send,{d}
         Return
 
-    PgUp::
-        IME_SET(0)
+    PgDn::
         send,{c}
         Return
 
