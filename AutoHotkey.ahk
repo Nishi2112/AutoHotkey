@@ -676,14 +676,16 @@ global F13_threshold := 300 ; ☆1 タップ判別時間 (ミリ秒単位)
         Send,{Enter}
         ; Send,^+{Tab}
         Return 
+    
+    /*無効化
+        PgUp::
+            send,{d}
+            Return
 
-    PgUp::
-        send,{d}
-        Return
-
-    PgDn::
-        send,{c}
-        Return
+        PgDn::
+            send,{c}
+            Return
+    */
 
     #IfWinActive
 
